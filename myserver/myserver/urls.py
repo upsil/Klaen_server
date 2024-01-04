@@ -19,6 +19,10 @@ from django.urls import path, include
 from scheduler.views import *
 from .views import *
 from account.views import login
+from airquality.views import *
+from lighting.views import *
+from tourism.views import * 
+from jobshop.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,5 +32,7 @@ urlpatterns = [
     path('menu/', include('menu.urls')),
     path('', login),
     path('home/', Home.as_view()),
+    path('airquality/', include('airquality.urls')),
 ]
+
 urlpatterns += staticfiles_urlpatterns()

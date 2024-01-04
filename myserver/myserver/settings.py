@@ -46,6 +46,10 @@ INSTALLED_APPS = [
     'frontend',
     'forms',
     'menu',
+    'airquality',
+    'lighting',
+    'tourism',
+    'jobshop',
 
 ]
 
